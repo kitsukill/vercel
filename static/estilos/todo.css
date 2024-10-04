@@ -1,0 +1,228 @@
+/* Adicionando esta classe ao CSS para o container da To-do List */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100vh; */
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+}
+strong{
+    color: var(--cor-terciaria);
+}
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 100px;
+}
+.cabecalho__menu__link {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/* Minha Frase Fofa */
+.roxo {
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+/* Main section */
+.red { 
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Separação da section filha*/
+.blue {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* Título */
+.brown {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+/* Frase e Texto principal */
+.yellow {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+/* Botões abaixo e sub-títulos. */
+.black {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+/* Classe dos botões para estilizarmos eles em si, não sua divisão. */
+.ocean {
+/*    background-color: #22d4fd; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+    }
+/* Quando o Mouse passa por cima (Hover) */
+.ocean:hover {
+    display: flex;
+    background-color: var(--cor-hover);
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+}
+.subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+/*Footer*/
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+/* ICONES DO PORTIFÓLIO */
+.foto {
+    width: 30px;
+}
+.trevo {
+    width: 40px;
+}
+
+
+.todo-container {
+    max-width: 600px; /* Largura máxima */
+    margin: 5% auto; /* Centraliza horizontalmente */
+    background-color: var(--cor-secundaria); /* Cor de fundo */
+    padding: 20px; /* Padding interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centraliza texto */
+}
+
+.todo-form {
+    display: flex; /* Flexbox para alinhar input e button */
+    gap: 10px; /* Espaço entre eles */
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+}
+
+.todo-form input {
+    flex: 1; /* O input ocupa o espaço restante */
+    padding: 10px; /* Padding do input */
+    border: 2px solid var(--cor-terciaria); /* Borda do input */
+    border-radius: 5px; /* Arredondamento da borda */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.todo-form button {
+    padding: 10px 20px; /* Padding do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Arredondamento da borda do botão */
+    background-color: var(--cor-terciaria); /* Cor de fundo do botão */
+    color: var(--cor-secundaria); /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.todo-form button:hover {
+    background-color: var(--cor-hover); /* Cor de fundo ao passar o mouse */
+}
+
+.todo-list {
+    list-style-type: none; /* Remove marcadores padrão da lista */
+}
+
+.todo-list li {
+    margin: 10px 0; /* Espaço entre itens da lista */
+    color: #22D4FD; /* Altere para a cor desejada */
+}
+
+.remover-link {
+    margin-left: 10px; /* Espaço à esquerda do link "Remover" */
+    color: var(--cor-terciaria); /* Altera a cor do link, se desejar */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.remover-link:hover {
+    color: var(--cor-hover); /* Altera a cor do link ao passar o mouse, se desejar */
+}
+
+
+.todo-list {
+    list-style-type: none; /* Remove marcadores padrão da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+.tarefa-container {
+    display: flex; /* Usa flexbox para o alinhamento */
+    justify-content: space-between; /* Distribui espaço entre o texto e o link */
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px; /* Espaçamento interno */
+    border-bottom: 1px solid var(--cor-terciaria); /* Linha separadora entre tarefas */
+}
+
+.tarefa-container span {
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+    margin-right: 10px; /* Espaço à direita do texto da tarefa */
+    overflow-wrap: break-word; /* Permite que o texto quebre a linha se for muito longo */
+    max-width: 70%; /* Largura máxima do texto da tarefa */
+    word-wrap: break-word; /* Quebra a palavra se necessário */
+}
+
+
+.remover-link {
+    color: var(--cor-terciaria); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    margin-left: 10px; /* Espaço à esquerda do link "Remover" */
+}
+
+.remover-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <!-- Alteração aqui -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style.css') }}">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="{{ url_for('index') }}">Home</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('about') }}">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('portifolio') }}">Portifólio do Kitsu</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('editor') }}">Editor</a>
+        </nav>
+    </header>
+    <main class="red">
+        <section class="blue">
+            <h1 class="brown">
+                Eleve seu negócio digital a outro nível 
+                <strong>com um Front-end de qualidade!</strong>
+            </h1>
+            <p class="yellow">Olá! Sou o Kitsu, responsável pelo setor de Tecnologia,<strong> Desenvolvedor Front-end e Editor de Vídeo</strong>. Ajudo negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <p class="roxo">A vida é a busca por aprender à ensinar: Ensinar à ser feliz.</p>
+            <div class="black">
+                <h2 class="subtitulo">Acesse minhas redes!</h2>  
+                <a class="ocean" href="https://github.com/kitsukill">
+                    <img src="{{ url_for('static', filename='assets/github.png') }}" alt="GitHub">
+                    GitHub
+                </a>           
+                <a class="ocean" href="https://www.linkedin.com/in/victor-castro-637918207/">
+                    <img src="{{ url_for('static', filename='assets/linkedin.png') }}" alt="LinkedIn">
+                    LinkedIn
+                </a> 
+                <a class="ocean" href="https://twitch.tv/kitsukill">
+                    <img src="{{ url_for('static', filename='assets/twitch.png') }}" alt="Twitch">
+                    Twitch
+                </a>
+            </div>
+        </section>
+        <img class="Peep" width="450px" height="400px" src="{{ url_for('static', filename='assets/Imagem.png') }}" alt="Kitsu">
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Kitsu.</p>
+    </footer>
+</body>
+</html>

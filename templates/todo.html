@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/todo.css') }}">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="{{ url_for('index') }}">Home</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('about') }}">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('portifolio') }}">Portifólio do Kitsu</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('editor') }}">Editor</a>
+        </nav>
+    </header>
+    <main class="todo-container">
+        <h1>To-do List</h1>
+        <form class="todo-form" action="{{ url_for('adicionar_tarefa') }}" method="POST">
+            <input type="text" name="novaTarefa" placeholder="Adicione uma nova tarefa" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <ul class="todo-list">
+            {% for tarefa in tarefas %}
+                <li>
+                    <div class="tarefa-container">
+                        <span>{{ tarefa }}</span>
+                        <a href="{{ url_for('remover_tarefa', indice=loop.index0) }}" class="remover-link">Remover</a>
+                    </div>
+                </li>
+            {% else %}
+                <li>Sem tarefas no momento.</li>
+            {% endfor %}
+        </ul>
+        
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Kitsu.</p>
+    </footer>
+</body>
+</html>

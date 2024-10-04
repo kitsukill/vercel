@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/about.css') }}">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="{{ url_for('index') }}">Home</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('about') }}">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('portifolio') }}">Portifólio do Kitsu</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('editor') }}">Editor</a>
+        </nav>
+    </header>
+
+    <main class="red">
+        <section class="blue">
+            <h1 class="brown">
+                Apaixonado por TI, Desenvolvedor Wordpress, Responsável pela Infra e Segurança de TI.
+                <strong>Com alegria e competência!</strong>
+            </h1>
+            <p class="yellow">Olá, Sou o <strong>Victor!</strong> Me graduei em Gestão de TI, sou apaixonado pela área que atuo e estou me desenvolvendo para me tornar um profissional cada vez mais completo.</p>
+            <p class="yellow">Estou estudando diversos assuntos e aprendendo na prática à como me tornar um melhor profissional e uma melhor pessoa <strong>a cada dia de expediente.</strong></p>
+            <p class="yellow">Estou realizando diversos cursos na Alura, juntamente com duas pós-graduações que estão me auxiliando à me desenvolver como profissional, e me ingressar na matéria que me interesso, que é a <strong>Liderança em TI com ênfase em desenvolvimento Full Stack.</strong></p>
+            <p class="roxo">A vida é a busca por aprender à ensinar: Ensinar à ser feliz.</p>
+            <div class="black">
+                <h2 class="subtitulo">Acesse minhas redes!</h2>  
+                <a class="ocean" href="https://instagram.com/kitsukill">
+                    <img src="{{ url_for('static', filename='assets/instagram.png') }}" alt="Instagram">
+                    Instagram</a>           
+                <a class="ocean" href="https://www.twitter.com/kitsu/">
+                    <img src="{{ url_for('static', filename='assets/twitter.png') }}" alt="Twitter">
+                    Twitter</a> 
+            </div>
+        </section>
+        <img width="450px" height="400px" src="{{ url_for('static', filename='assets/Imagem.png') }}" alt="Foto da Joana Santos programando">
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Kitsu.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/editor.css') }}">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="{{ url_for('index') }}">Home</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('about') }}">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('portifolio') }}">Portifólio do Kitsu</a>
+            <a class="cabecalho__menu__link" href="{{ url_for('editor') }}">Editor</a>
+        </nav>
+    </header>
+    <main class="red">
+        <section class="blue">
+            <h1 class="brown">
+                Alguns dos meus  
+                <strong>Projetos.</strong>
+            </h1>
+            <p class="yellow">Olá! Sou o Kitsu, e aqui exibo alguns de meus trabalhos com <strong>Edição no Sony Vegas</strong>. Vamos 
+            conversar?</p>
+            <p class="roxo">A vida é a busca por aprender à ensinar: Ensinar à ser feliz.</p>
+            <div class="black">
+                <h2 class="subtitulo">Alguns de meus Projetos!</h2>  
+                <a class="ocean" href="{{ url_for('aninha') }}"> <img src="{{ url_for('static', filename='assets/valorant.png') }}" class="foto"> aninhaysz</a>         
+            </div>
+            <div class="black">
+                <h2 class="subtitulo">Acesse minhas redes!</h2>  
+                <a class="ocean" href="https://instagram.com/kitsukill">
+                    <img src="{{ url_for('static', filename='assets/instagram.png') }}">
+                    Instagram</a>           
+                <a class="ocean" href="https://www.twitter.com/kitsu/">
+                    <img src="{{ url_for('static', filename='assets/twitter.png') }}">
+                    Twitter</a> 
+            </div>
+        </section>
+        <img width="450px" height="400px" src="{{ url_for('static', filename='assets/Imagem.png') }}" alt="Foto da Joana Santos programando">
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Kitsu.</p>
+    </footer>
+</body>
+</html>

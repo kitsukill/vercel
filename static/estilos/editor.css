@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: #352D4D     ;
+    --cor-secundaria: #F6F6F6  ;
+    --cor-terciaria: #8A2BE2    ;
+    --cor-hover: #6A5ACD     ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100vh; */
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+}
+strong{
+    color: var(--cor-terciaria);
+}
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 100px;
+}
+.cabecalho__menu__link {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/* Minha Frase Fofa */
+.roxo {
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+/* Main section */
+.red { 
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Separação da section filha*/
+.blue {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* Título */
+.brown {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+/* Frase e Texto principal */
+.yellow {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+/* Botões abaixo e sub-títulos. */
+.black {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+/* Classe dos botões para estilizarmos eles em si, não sua divisão. */
+.ocean {
+/*    background-color: #22d4fd; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+    }
+/* Quando o Mouse passa por cima (Hover) */
+.ocean:hover {
+    display: flex;
+    background-color: var(--cor-hover);
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+}
+.subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+/*Footer*/
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+/* ICONES DO PORTIFÓLIO */
+.foto {
+    width: 30px;
+}
+.trevo {
+    width: 40px;
+}
